@@ -24,7 +24,7 @@ const config = {
     MONGO_URL_NUBE : process.env.MONGO_URL_NUBE,
   
     tipoBaseDato:process.env.BASE_DATOS,
-    PUERTO: process.env.PUERTO,
+    PUERTO: process.env.PUERTO || 8080,
     producto:'producto',
     carrito:'carrito'
 
