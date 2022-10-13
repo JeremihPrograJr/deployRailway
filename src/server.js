@@ -35,8 +35,8 @@ app.get ('/', async (req,res) => {
         res.send({status:"Sucess"})
  });
 
-const server = app.listen(8080, () => {
-        console.log(`Conectandose al http://localhost:${8080} `)
+const server = app.listen(process.env.PORT, () => {
+        console.log(`Conectandose al http://localhost:${process.env.PORT} `)
 })
 
 server.on('error' , (error)=> {
