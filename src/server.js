@@ -35,8 +35,8 @@ router.get ('/', async (req,res) => {
         res.send({status:"Sucess"})
  });
 
-const server = app.listen(config.PUERTO, () => {
-        console.log(`Conectandose al http://localhost:${config.PUERTO} `)
+const server = app.listen(8080, () => {
+        console.log(`Conectandose al http://localhost:${8080} `)
 })
 
 server.on('error' , (error)=> {

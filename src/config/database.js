@@ -1,6 +1,7 @@
 
 require('dotenv').config();
 console.log(process.env.BASE_DATOS)
+console.log(process.env.PUERTO)
 
 const config = {
     mysql : {
