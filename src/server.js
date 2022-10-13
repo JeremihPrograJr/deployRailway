@@ -30,10 +30,7 @@ app.use( (req,res,next) => {
 });
 
 
-//obtener lista de productos por carro id
-app.get ('/', async (req,res) => {
-        res.send({status:"Sucess"})
- });
+
 
 const server = app.listen(process.env.PORT, () => {
         console.log(`Conectandose al http://localhost:${process.env.PORT} `)
