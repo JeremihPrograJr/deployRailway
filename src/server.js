@@ -30,6 +30,11 @@ app.use( (req,res,next) => {
 });
 
 
+//obtener lista de productos por carro id
+router.get ('/', async (req,res) => {
+        res.send({status:"Sucess"})
+ });
+
 const server = app.listen(config.PUERTO, () => {
         console.log(`Conectandose al http://localhost:${config.PUERTO} `)
 })
