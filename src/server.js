@@ -31,7 +31,7 @@ app.use( (req,res,next) => {
 
 
 //obtener lista de productos por carro id
-router.get ('/', async (req,res) => {
+app.get ('/', async (req,res) => {
         res.send({status:"Sucess"})
  });
 
